@@ -149,9 +149,9 @@
         <label for="clue2-answer">Enter the number of differences you found:</label>
         <input type="text" id="clue2-answer" placeholder="Enter your answer...">
         <button class="btn" onclick="checkClue2()">Submit</button>
-        <p class="hint" id="clue2-hint">Hint: There are exactly 5 differences!</p>
+      
       </div>
-      <div class="solution" id="clue2-solution">Correct! You found all 5 differences! Let's move on to the next clue.</div>
+      <div class="solution" id="clue2-solution">Correct! You found all differences! Let's move on to the next clue.</div>
       <div class="next-clue" id="next-clue2">
         <a href="T4C2.html" class="btn">Next Clue</a> <!-- Redirect to clue 3 -->
       </div>
@@ -162,7 +162,7 @@
   <script>
     function checkClue2() {
       const answer = document.getElementById('clue2-answer').value;
-      if (answer === 'eyes and eyebrows') {
+      if (answer === '2') {
         document.getElementById('clue2-solution').style.display = 'block';
         document.getElementById('next-clue2').style.display = 'block';
       } else {
